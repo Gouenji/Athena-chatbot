@@ -4,8 +4,8 @@ from slackclient import SlackClient
 
 BOT_NAME = 'athena'
 SLACK_BOT_TOKEN='xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA'
-slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
-
+#slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
+slack_client = SlackClient('xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA')
 
 if __name__ == "__main__":
     #os.system(str("export SLACK_BOT_TOKEN='xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA'"))
