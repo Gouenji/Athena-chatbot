@@ -3,12 +3,12 @@ from slackclient import SlackClient
 
 
 BOT_NAME = 'athena'
-
+SLACK_BOT_TOKEN='xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA'
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 
 
 if __name__ == "__main__":
-    os.system(str("export SLACK_BOT_TOKEN='xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA'"))
+    #os.system(str("export SLACK_BOT_TOKEN='xoxb-131118821488-etvjp2jrYDMHMG3EaE3sZ6MA'"))
     api_call = slack_client.api_call("users.list")
     if api_call.get('ok'):
         # retrieve all users so we can find our bot
