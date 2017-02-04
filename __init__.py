@@ -15,7 +15,7 @@ if __name__ == "__main__":
         users = api_call.get('members')
         for user in users:
             if 'name' in user and user.get('name') == BOT_NAME:
-                #print("Bot ID for '" + user['name'] + "' is " + user.get('id'))
-        os.system("export BOT_ID=\'"+str(user.get('id'))+"\'")
+                print("Bot ID for '" + user['name'] + "' is " + user.get('id'))
+        #os.system("export BOT_ID=\'"+str(user.get('id'))+"\'")
     else:
         print("could not find bot user with the name " + BOT_NAME)
